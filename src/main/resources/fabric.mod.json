@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "avienomod",
+  "version": "${version}",
+
+  "name": "Avienomod",
+  "description": "The mod developped for the Find Avieno SMP",
+  "authors": [
+    "Skyler",
+    "Cyan"
+  ],
+  "contact": {},
+
+  "license": "MIT",
+  "icon": "assets/avienomod/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.avienomod.avienomod.client.AvienomodClient"
+    ],
+    "main": [
+      "com.avienomod.avienomod.Avienomod"
+    ]
+  },
+
+          "mixins": [
+        "avienomod.mixins.json"
+      ],
+    
+  "depends": {
+    "fabricloader": ">=0.11.3",
+              "fabric": "*",
+          "minecraft": "1.16.5"
+  }
+}
